@@ -1,0 +1,5 @@
+#node,os,arch,profile,provmethod,supportedarchs,nodetype,comments,disable
+"all","centos7.9","x86_64","all","centos7.9-x86_64-install",,,,
+"ma2","centos7.9","x86_64","compute","centos7.9-x86_64-netboot-compute",,,,
+"maude1","centos7.9","x86_64","compute","centos7.9-x86_64-install-compute",,,,
+"ma1","centos7.9","x86_64","compute","centos7.9-x86_64-netboot-compute",,,,

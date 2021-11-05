@@ -1,0 +1,6 @@
+/etc/hosts -> /etc/hosts
+/install/custom/syncfiles/all/etc/passwd -> /etc/passwd
+/install/custom/syncfiles/all/etc/shadow -> /etc/shadow
+/install/custom/syncfiles/all/etc/group -> /etc/group
+/etc/slurm/slurm.conf -> /etc/slurm/slurm.conf
+/etc/munge/munge.key -> /etc/munge/munge.key

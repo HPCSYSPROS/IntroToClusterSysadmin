@@ -1,0 +1,24 @@
+Notes:
+
+This needs to happen AFTER the ohpc package installation, since /opt/ohpc/pub doesn't exist yet!
+
+yum install -y nfs-utils mountd rpc-bind 
+
+#for lmod-ohpc
+echo "/opt/ohpc/pub 192.168.122.0/24(rw,root_squash,sync,no_subtree_check)" >> /etc/exports
+systemctl enable nfs-server
+systemctl restart nfs-server
+
+#establish headnode as a timeserver
+echo "allow all 192.168.122.0/24" >> /etc/ntpd.conf
+
+#Next, set compute nodes to sync with the headnode
+echo "server 192.168.122.1" >> /netboot/centos8/x86_64/compute/rootimg/etc/ntpd.conf
+
+#Now, have the compute nodes mount /opt/ohpc/pub in their fstab
+#insert
+"maadmin:/opt/ohpc/pub/  /opt/ohpc/pub  nfs   rw  0 0" 
+into 
+/opt/xcat/share/xcat/netboot/centos/compute.centos7.postinstall
+in the fstab generation section
+ - seems like /home should be here too; why is that happening?
