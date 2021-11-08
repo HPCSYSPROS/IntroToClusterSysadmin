@@ -50,7 +50,8 @@ Information for the Intro to Cluster System Administration for Non-Sysadmins cla
   * Install Recipes: https://github.com/openhpc/ohpc/wiki/2.X
 
 ## More Resources
-* Linux Cluster Institute: https://www.practicalnetworking.net/series/packet-traveling/osi-model/
+* Linux Cluster Institute: http://www.linuxclustersinstitute.org/workshops/archive/ 
+
 # Contents
 
 This repo contains an example xCAT dump from a working cluster, and a copy
