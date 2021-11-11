@@ -7,7 +7,7 @@ Information for the Intro to Cluster System Administration for Non-Sysadmins cla
 * https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/part-basic_system_configuration
 * https://xcat-docs.readthedocs.io/en/stable/guides/install-guides/yum/index.html
 
-## First part
+## First part - Network services
 * Briefly cover first 3 layers of the OSI networking model
   * https://www.practicalnetworking.net/series/packet-traveling/key-players
   * https://www.practicalnetworking.net/series/packet-traveling/osi-model/
@@ -31,7 +31,7 @@ Information for the Intro to Cluster System Administration for Non-Sysadmins cla
 * /etc/hosts files
   * xCAT: makehosts
 
-## Second part:
+## Second part - Images
 * PXE (tftp/kernel/initrd)
   * admin:/tftpboot/pxelinux.cfg
   * admin:/tftpboot/xcat/osimage/{osimagename}
@@ -44,20 +44,26 @@ Information for the Intro to Cluster System Administration for Non-Sysadmins cla
   * Stateless - https://xcat-docs.readthedocs.io/en/stable/guides/admin-guides/manage_clusters/ppc64le/diskless/index.html
     * genimage {osimagename}
     * packimage {osimagename}
+  * otherpkgs (non-OS packages)
+
+## Third part - Node management
 * ssh keys/parallel shell
   * remoteshell postscript
   * xdsh
-## Third part
 * User management (passwd/shadow/group files/LDAP)
   * syncfiles postscript
+  * updatenode {node} -F
 * Shared file system (NFS/NTP)
   * postinstall scripts
-* Firewalls (iptables)
 * Resource manager (SLURM) 
   * https://slurm.schedmd.com/quickstart.html
   * OpenHPC Community: https://openhpc.community
   * Install Recipes: https://github.com/openhpc/ohpc/wiki/2.X
-  * otherpkgs
+* Firewalls (iptables) best practices
+  * Lockdown ssh on the login node
+  * Lockdown SLURM on the resource manager node
+  * Leave nodes on a private subnet
+  
 ## More Resources
 * Linux Cluster Institute: http://www.linuxclustersinstitute.org/workshops/archive/ 
 
