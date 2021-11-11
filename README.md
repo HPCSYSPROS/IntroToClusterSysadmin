@@ -30,20 +30,24 @@ Information for the Intro to Cluster System Administration for Non-Sysadmins cla
   * xCAT: makedns
 * /etc/hosts files
   * xCAT: makehosts
+* Node definitions
+  * lsdef
+  * lsdef {node name} 
 
 ## Second part - Images
 * PXE (tftp/kernel/initrd)
   * admin:/tftpboot/pxelinux.cfg
   * admin:/tftpboot/xcat/osimage/{osimagename}
     * lsdef -t osimage
+    * lsdef -t osimage {osimage name}
 * Stateless vs. Stateful installations
   * copycds
   * https://xcat-docs.readthedocs.io/en/stable/
   * Stateful - https://xcat-docs.readthedocs.io/en/stable/guides/admin-guides/manage_clusters/ppc64le/diskful/index.html
     * Software repos/unattended installations (kickstart)
   * Stateless - https://xcat-docs.readthedocs.io/en/stable/guides/admin-guides/manage_clusters/ppc64le/diskless/index.html
-    * genimage {osimagename}
-    * packimage {osimagename}
+    * genimage {osimage name}
+    * packimage {osimage name}
   * otherpkgs (non-OS packages)
 
 ## Third part - Node management
