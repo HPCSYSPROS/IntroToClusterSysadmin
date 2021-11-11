@@ -33,22 +33,31 @@ Information for the Intro to Cluster System Administration for Non-Sysadmins cla
 
 ## Second part:
 * PXE (tftp/kernel/initrd)
+  * admin:/tftpboot/pxelinux.cfg
+  * admin:/tftpboot/xcat/osimage/{osimagename}
+    * lsdef -t osimage
 * Stateless vs. Stateful installations
+  * copycds
   * https://xcat-docs.readthedocs.io/en/stable/
   * Stateful - https://xcat-docs.readthedocs.io/en/stable/guides/admin-guides/manage_clusters/ppc64le/diskful/index.html
+    * Software repos/unattended installations (kickstart)
   * Stateless - https://xcat-docs.readthedocs.io/en/stable/guides/admin-guides/manage_clusters/ppc64le/diskless/index.html
-* Software repos/unattended installations
+    * genimage {osimagename}
+    * packimage {osimagename}
 * ssh keys/parallel shell
-
+  * remoteshell postscript
+  * xdsh
 ## Third part
-* Firewalls (iptables)
 * User management (passwd/shadow/group files/LDAP)
+  * syncfiles postscript
 * Shared file system (NFS/NTP)
+  * postinstall scripts
+* Firewalls (iptables)
 * Resource manager (SLURM) 
   * https://slurm.schedmd.com/quickstart.html
   * OpenHPC Community: https://openhpc.community
   * Install Recipes: https://github.com/openhpc/ohpc/wiki/2.X
-
+  * otherpkgs
 ## More Resources
 * Linux Cluster Institute: http://www.linuxclustersinstitute.org/workshops/archive/ 
 
