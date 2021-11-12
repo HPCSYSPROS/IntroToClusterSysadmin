@@ -54,7 +54,7 @@ Information for the Intro to Cluster System Administration for Non-Sysadmins cla
 * ssh keys/parallel shell
   * remoteshell postscript
   * xdsh
-* User management (passwd/shadow/group files/LDAP)
+* User management (passwd/shadow/group files)
   * syncfiles postscript
   * updatenode {node} -F
 * Shared file system (NFS/NTP)
