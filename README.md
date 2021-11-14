@@ -21,18 +21,27 @@ Information for the Intro to Cluster System Administration for Non-Sysadmins cla
   * https://xcat-docs.readthedocs.io/en/stable/guides/install-guides/yum/prepare_mgmt_node.html
   * https://xcat-docs.readthedocs.io/en/stable/guides/install-guides/yum/automatic_install.html
   * https://xcat-docs.readthedocs.io/en/stable/guides/get-started/quick_start.html
+  * lsdef -t site {site name}
+* Network setup
+  * lsdef -t network
+  * lsdef -t network {network name}
 * DHCP
   * https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/ch-dhcp_servers
   * https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/sec-dhcp-configuring-server
   * xCAT: makedhcp
+  * /etc/dhcp/dhcpd.conf
+  * /var/lib/dhcpd/dhcpd.leases
 * DNS
   * https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/sec-bind#sec-bind-namedconf
   * xCAT: makedns
-* /etc/hosts files
+  * /var/named
+* Hosts files
   * xCAT: makehosts
+  * /etc/hosts
 * Node definitions
   * lsdef
   * lsdef {node name} 
+  * lsdef -t group {group name}
 
 ## Second part - Images
 * PXE (tftp/kernel/initrd)
