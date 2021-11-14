@@ -52,13 +52,14 @@ Information for the Intro to Cluster System Administration for Non-Sysadmins cla
 
 ## Third part - Node management
 * ssh keys/parallel shell
-  * remoteshell postscript
+  * /install/postscripts/remoteshell
   * xdsh
 * User management (passwd/shadow/group files)
-  * syncfiles postscript
+  * /install/postscripts/syncfiles
   * updatenode {node} -F
 * Shared file system (NFS/NTP)
-  * postinstall scripts
+  * Postinstall scripts
+    * /install/custom/install/centos7.9/x86_64/centos7.postinstall
 * Resource manager (SLURM) 
   * https://slurm.schedmd.com/quickstart.html
   * OpenHPC Community: https://openhpc.community
