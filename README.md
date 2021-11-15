@@ -57,7 +57,7 @@ Information for the Intro to Cluster System Administration for Non-Sysadmins cla
   * Stateful - https://xcat-docs.readthedocs.io/en/stable/guides/admin-guides/manage_clusters/ppc64le/diskful/index.html
     * Software repos/unattended installations (kickstart)
     * /install/custom/ks/centos/login.centos7.tmpl
-      * 
+      * /install/custom/ks/centos/post.local
     * /install/custom/ks/centos/login.centos7.pkglist
   * Stateless - https://xcat-docs.readthedocs.io/en/stable/guides/admin-guides/manage_clusters/ppc64le/diskless/index.html
     * genimage {osimage name}
