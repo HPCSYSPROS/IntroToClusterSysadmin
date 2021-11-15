@@ -42,6 +42,8 @@ Information for the Intro to Cluster System Administration for Non-Sysadmins cla
   * lsdef
   * lsdef {node name} 
   * lsdef -t group {group name}
+* Create node
+  * nodeadd {node name} groups=vm,login,all
 
 ## Second part - Images
 * PXE (tftp/kernel/initrd)
@@ -54,8 +56,14 @@ Information for the Intro to Cluster System Administration for Non-Sysadmins cla
   * https://xcat-docs.readthedocs.io/en/stable/
   * Stateful - https://xcat-docs.readthedocs.io/en/stable/guides/admin-guides/manage_clusters/ppc64le/diskful/index.html
     * Software repos/unattended installations (kickstart)
+    * /install/custom/ks/centos/login.centos7.tmpl
+      * 
+    * /install/custom/ks/centos/login.centos7.pkglist
   * Stateless - https://xcat-docs.readthedocs.io/en/stable/guides/admin-guides/manage_clusters/ppc64le/diskless/index.html
     * genimage {osimage name}
+      * /install/netboot/centos7.9/x86_64/compute/compute.pkglist
+    * Base image 
+      * /install/netboot/centos7.9/x86_64/compute/rootimg
     * packimage {osimage name}
   * otherpkgs (non-OS packages)
 
