@@ -91,10 +91,15 @@ Information for the Intro to Cluster System Administration for Non-Sysadmins cla
 
 # Contents
 
-This repo contains an example xCAT dump from a working cluster, and a copy
-of the /install directory with relevant changes to config files. The 
-/post/install/otherpkgs/x86_86centos7.9/ 
-repository has been replicated via 'touch', so that a list of rpms is 
-available but without the space useage.
-The ntp_nfs.txt and slurm_install.txt documents describe detailed steps taken to
-configure those services on the example cluster.
+* This repo contains an example xCAT dump from a working cluster, and a copy of the /install directory with relevant changes to config files. 
+* To use the xCAT config: <pre>restorexCATdb -p xCAT-dump-example</pre>
+* To use the install directory: <pre>cp -rf install-example to /install</pre>
+* The /install/post/install/otherpkgs/x86_86/centos7.9/ needs to be created with the <pre>copycds {CentOS 7.9 Everthing DVD.iso}</pre>
+* The /install/netboot/centos7.9/x86_64/compute/ files need to be created using:<pre>
+genimage centos7.9-x86_64-netboot-compute
+packimage centos7.9-x86_64-netboot-compute</pre>
+* The root password in the password table needs to be changed. 
+  * Generate a root password hash: <pre>openssl passwd -1</pre>
+  * Set root password: <pre>chtab key=system passwd.username=root passwd.password={Hash from openssl command}</pre>
+* The ntp_nfs.txt and slurm_install.txt documents describe detailed steps taken to configure those services on the example cluster
+* You need to create the VM machines using the info found in the xCAT vm table. See xCAT-dump-example/vm.csv
