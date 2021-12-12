@@ -42,3 +42,4 @@ postgres:x:26:
 ntp:x:38:
 munge:x:201:
 slurm:x:202:
+users:x:1000:

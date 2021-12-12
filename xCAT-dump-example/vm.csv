@@ -1,4 +1,2 @@
 #node,mgr,host,migrationdest,storage,storagemodel,storagecache,storageformat,cfgstore,memory,cpus,nics,nicmodel,bootorder,clockoffset,virtflags,master,vncport,textconsole,powerstate,beacon,datacenter,cluster,guestostype,othersettings,physlots,vidmodel,vidproto,vidpassword,comments,disable
-"all",,"maadmin",,"dir:///var/lib/libvirt/images/",,,"qcow2",,"2048",,"virbr0","virtio",,,,,,,,,,,,,,,,"new4you2",,
-"compute",,,,,,,,,,"1",,,,,,,,,,,,,,,,,,,,
-"login",,,,,,,,,,"1",,,,,,,,,,,,,,,,,,,,
+"all",,"maadmin",,"dir:///var/lib/libvirt/images/",,,"qcow2",,"2048","1","virbr0","virtio",,,,,,,,,,,,,,,,"vncpassword",,

@@ -1,7 +1,0 @@
-#imagename,groups,profile,imagetype,description,provmethod,rootfstype,osdistroname,osupdatename,cfmdir,osname,osvers,osarch,synclists,postscripts,postbootscripts,serverrole,isdeletable,kitcomponents,environvar,comments,disable
-"centos7.9-x86_64-install",,"all","linux",,"install",,"centos7.9-x86_64",,,"Linux","centos7.9","x86_64","/install/custom/syncfiles/all.synclist",,,,,,,,
-"centos7.9-x86_64-netboot",,"all","linux",,"netboot",,"centos7.9-x86_64",,,"Linux","centos7.9","x86_64",,,,,,,,,
-"centos7.9-x86_64-statelite",,"all","linux",,"statelite",,"centos7.9-x86_64",,,"Linux","centos7.9","x86_64",,,,,,,,,
-"centos7.9-x86_64-netboot-compute",,"compute","linux",,"netboot",,"centos7.9-x86_64",,,"Linux","centos7.9","x86_64","/install/custom/syncfiles/all.synclist",,,,,,,,
-"centos7.9-x86_64-statelite-compute",,"compute","linux",,"statelite",,"centos7.9-x86_64",,,"Linux","centos7.9","x86_64",,,,,,,,,
-"centos7.9-x86_64-install-compute",,"compute","linux",,"install",,"centos7.9-x86_64",,,"Linux","centos7.9","x86_64","/install/custom/syncfiles/all.synclist",,,,,,,,

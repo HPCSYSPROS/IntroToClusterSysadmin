@@ -1,0 +1,1 @@
+echo "maadmin:/home /home nfs defaults 0 0" >> /etc/fstab

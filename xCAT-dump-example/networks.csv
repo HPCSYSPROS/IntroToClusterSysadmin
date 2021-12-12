@@ -1,3 +1,2 @@
 #netname,net,mask,mgtifname,gateway,dhcpserver,tftpserver,nameservers,ntpservers,logservers,dynamicrange,staticrange,staticrangeincrement,nodehostname,ddnsdomain,vlanid,domain,mtu,comments,disable
-"external","192.168.1.0","255.255.255.0","wlp2s0","192.168.1.1",,"<xcatmaster>",,,,,,,,,,,"1500",,
 "internal","192.168.122.0","255.255.255.0","virbr0","<xcatmaster>","<xcatmaster>","<xcatmaster>","<xcatmaster>","<xcatmaster>",,"192.168.122.200-192.168.122.250",,,,,,,,"1500",

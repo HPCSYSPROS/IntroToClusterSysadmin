@@ -1,4 +1,0 @@
-#node,currstate,currchain,chain,ondiscover,comments,disable
-"ma2","boot","boot",,,,
-"maude1","boot","boot",,,,
-"ma1","netboot centos7.9-x86_64-compute","boot",,,,

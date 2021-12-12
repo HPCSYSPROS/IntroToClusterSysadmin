@@ -1,2 +1,0 @@
-#osdistroname,basename,majorversion,minorversion,arch,type,dirpaths,comments,disable
-"centos7.9-x86_64","centos","7","9","x86_64","Linux","/install/centos7.9/x86_64",,

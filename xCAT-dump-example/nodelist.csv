@@ -1,5 +1,6 @@
 #node,groups,status,statustime,appstatus,appstatustime,primarysn,hidden,updatestatus,updatestatustime,zonename,comments,disable
 "maadmin","admin",,,,,,,,,,,
-"ma2","vm,compute,all","booted","10-21-2021 14:05:19",,,,,,,,,
-"maude1","vm,login,all","booted","09-30-2021 02:01:54",,,,,,,,,
-"ma1","vm,compute,all","booted","10-21-2021 13:39:12",,,,,"synced","10-21-2021 13:58:13",,,
+"ma1","vm,compute,all","booted","11-15-2021 15:31:20",,,,,"synced","11-15-2021 16:43:27",,,
+"ma2","vm,compute,all","booted","11-15-2021 13:11:00",,,,,"synced","11-15-2021 16:43:27",,,
+"maude1","vm,login,all","booted","11-15-2021 13:10:40",,,,,"synced","11-15-2021 16:43:27",,,
+"maude2","vm,login,all","booted","11-15-2021 15:10:06",,,,,"synced","11-15-2021 16:43:27",,,
